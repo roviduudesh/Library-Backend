@@ -1,6 +1,5 @@
 package com.app.lms.service;
 
-import com.app.lms.dto.AA;
 import com.app.lms.dto.BookDTO;
 import com.app.lms.dto.ResponseDTO;
 import lombok.Data;
@@ -24,7 +23,7 @@ public class BookService {
 
     public ResponseEntity<?> getData() {
         ResponseDTO responseDto = new ResponseDTO();
-        AA aa = new AA();
+
         try {
             String url = "https://prosentient.intersearch.com.au/cgi-bin/koha/svc/report?id=1&annotated=1";
             HttpClient client = HttpClient.newHttpClient();
