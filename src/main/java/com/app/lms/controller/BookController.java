@@ -16,6 +16,10 @@ public class BookController {
 
     private final BookService bookService;
 
+    /**
+     * This API will return the book details.
+     * @return responseDto
+     */
     @GetMapping(value = "/details")
     public ResponseEntity<?> getBookList(){
         ResponseEntity<?> responseDto =  bookService.getData();
